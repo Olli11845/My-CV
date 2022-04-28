@@ -1,4 +1,30 @@
-box-sizing: border-box;
+* {
+  box-sizing: border-box;
+}
 
 body {
+  margin: 0px;
 }
+header {
+  padding: 20px;
+  background-color: greenyellow;
+  font-family: "Tapestry", cursive;
+}
+
+/*jetzt kommt der ID selector*/
+
+#main-header {
+  text-align: center;
+  padding-bottom: 70px;
+  font-family: "water Brush", cursive;
+}
+
+/*noch anschauen: wie weise ich classes zu um sie zu stylen?*/
+
+/*
+font-family: 'Tapestry', cursive;
+font-family: 'Water Brush', cursive;
+
+Download über google fonts. Kopie in HTML Head nur einmal
+
+*/
