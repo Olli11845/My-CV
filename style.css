@@ -36,6 +36,10 @@ Download über google fonts. Kopie in HTML Head nur einmal
 
 Frage: Kann der erste Teil der Aufgabe mit `main > *`, also allen Elementen die unter Main sind gelöst werden?*/
 
+main > * {
+  margin-top: 50px;
+}
+
 /*Add styling to the navigation links
 Add spacing between the navigation links*/
 
