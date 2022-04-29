@@ -28,3 +28,21 @@ font-family: 'Water Brush', cursive;
 Download über google fonts. Kopie in HTML Head nur einmal
 
 */
+#table-of-content {
+  background-color: #fff;
+}
+
+/**ab hier beginnt Tast zu pseude klassen etc
+
+Frage: Kann der erste Teil der Aufgabe mit `main > *`, also allen Elementen die unter Main sind gelöst werden?*/
+
+main > * {
+  margin-top: 50px;
+}
+
+/*Add styling to the navigation links
+Add spacing between the navigation links
+Add a general color for the navigation links
+Add specific styling for the :hover and :active state (i.e. different color or background color)*/
+
+/*herausfinden was das a vor dem Link bedeutet*/
