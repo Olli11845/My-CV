@@ -84,8 +84,7 @@ a:active {
 
 /*Use the border property to draw a line over each article of the main content except for the first one*/
 
-article + article {
-  border: 5px solid black;
+/* *+article nochmal anschauen */
+* + article {
+  border-top: 5px dashed black;
 }
-
-/*FU...*/
