@@ -36,13 +36,52 @@ Download über google fonts. Kopie in HTML Head nur einmal
 
 Frage: Kann der erste Teil der Aufgabe mit `main > *`, also allen Elementen die unter Main sind gelöst werden?*/
 
-main > * {
-  margin-top: 50px;
-}
-
 /*Add styling to the navigation links
-Add spacing between the navigation links
-Add a general color for the navigation links
-Add specific styling for the :hover and :active state (i.e. different color or background color)*/
+Add spacing between the navigation links*/
 
 /*herausfinden was das a vor dem Link bedeutet*/
+
+/* verdammtes *+* funktioniert nicht*/
+
+#table-of-content li {
+  margin-top: 25px;
+}
+
+/* das folgende funktioniert nicht weil ich erst andere ausschließen muss
+
+li + li {
+  background-color: aqua;
+}
+*/
+
+/*
+Add a general color for the navigation links
+*/
+
+a:link {
+  color: blueviolet;
+  background-color: aquamarine;
+}
+
+a:visited {
+  color: white;
+}
+
+/*
+Add specific styling for the :hover and :active state (i.e. different color or background color)*/
+
+a:hover {
+  color: coral;
+}
+
+a:active {
+  color: crimson;
+}
+
+/*Use the border property to draw a line over each article of the main content except for the first one*/
+
+article * + * article {
+  border: 5px solid black;
+}
+
+/*FU...*/
