@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  /*font-family: inherit;*/
 }
 
 body {
@@ -49,6 +50,7 @@ Add spacing between the navigation links*/
 
 #table-of-content li {
   margin-top: 25px;
+  font-family: "water Brush", cursive;
 }
 
 /* das folgende funktioniert nicht weil ich erst andere ausschließen muss
@@ -90,7 +92,7 @@ a:active {
 }
 
 ::selection {
-  background-color: ;
+  background-color: greenyellowclear;
   color: black;
 
   /*😈*/
