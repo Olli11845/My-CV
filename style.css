@@ -88,3 +88,14 @@ a:active {
 * + article {
   border-top: 5px dashed black;
 }
+
+::selection {
+  background-color: ;
+  color: black;
+
+  /*😈*/
+}
+#main-header::after {
+  content: "😈🤓";
+  font-size: 200%;
+}
