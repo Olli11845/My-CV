@@ -101,3 +101,11 @@ a:active {
   content: "😈🤓";
   font-size: 200%;
 }
+
+.exp-heading {
+  display: inline-block;
+}
+
+.exp-sub-heading {
+  display: inline-block;
+}
