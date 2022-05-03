@@ -4,10 +4,10 @@
 }
 
 body {
-  margin: 0px;
+  margin: 0;
 }
 header {
-  padding: 20px;
+  padding: 0.5rem;
   background-color: greenyellow;
   font-family: "Tapestry", cursive;
 }
@@ -16,7 +16,7 @@ header {
 
 #main-header {
   text-align: center;
-  padding-bottom: 70px;
+  padding-bottom: 2.2rem;
   font-family: "water Brush", cursive;
 }
 
@@ -31,6 +31,8 @@ Download über google fonts. Kopie in HTML Head nur einmal
 */
 #table-of-content {
   background-color: #fff;
+  margin: 0 auto;
+  max-width: 100rem;
 }
 
 /**ab hier beginnt Tast zu pseude klassen etc
@@ -38,7 +40,9 @@ Download über google fonts. Kopie in HTML Head nur einmal
 Frage: Kann der erste Teil der Aufgabe mit `main > *`, also allen Elementen die unter Main sind gelöst werden?*/
 
 main > * {
-  margin-top: 50px;
+  margin-top: 2rem;
+  margin: 0 auto;
+  max-width: 200ch;
 }
 
 /*Add styling to the navigation links
@@ -49,7 +53,7 @@ Add spacing between the navigation links*/
 /* verdammtes *+* funktioniert nicht*/
 
 #table-of-content li {
-  margin-top: 25px;
+  margin-top: 0.8rem;
   font-family: "water Brush", cursive;
 }
 
@@ -88,11 +92,11 @@ a:active {
 
 /* *+article nochmal anschauen */
 * + article {
-  border-top: 5px dashed black;
+  border-top: 0.2rem dashed black;
 }
 
 ::selection {
-  background-color: greenyellowclear;
+  background-color: blue;
   color: black;
 
   /*😈*/
@@ -114,6 +118,32 @@ a:active {
   position: sticky;
   top: 0cm;
   left: 0cm;
-  padding-top: 10px;
-  padding-bottom: 5px;
+  padding-top: 0.3rem;
+  padding-bottom: 0.2rem;
+  font-size: 1.7em;
+}
+#hire-me {
+  position: fixed;
+  top: 0.2rem;
+  right: 0.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+header {
+  position: relative;
+  left: -0.3rem;
+}
+
+/*Verschieben von Text kann auch mit negativen Zahlenwerten erfolgen*/
+html {
+  font-size: 32;
+}
+
+.heading-element {
+  font-size: 2rem;
+}
+
+.profession {
+  font-size: 0.6em;
 }
