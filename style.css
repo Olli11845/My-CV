@@ -109,3 +109,11 @@ a:active {
 .exp-sub-heading {
   display: inline-block;
 }
+
+#main-header {
+  position: sticky;
+  top: 0cm;
+  left: 0cm;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
