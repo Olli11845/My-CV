@@ -32,7 +32,7 @@ Download über google fonts. Kopie in HTML Head nur einmal
 #table-of-content {
   background-color: #fff;
   margin: 0 auto;
-  max-width: 100rem;
+  max-width: 180ch;
 }
 
 /**ab hier beginnt Tast zu pseude klassen etc
@@ -42,7 +42,7 @@ Frage: Kann der erste Teil der Aufgabe mit `main > *`, also allen Elementen die 
 main > * {
   margin-top: 2rem;
   margin: 0 auto;
-  max-width: 200ch;
+  max-width: 180ch;
 }
 
 /*Add styling to the navigation links
@@ -137,7 +137,7 @@ header {
 
 /*Verschieben von Text kann auch mit negativen Zahlenwerten erfolgen*/
 html {
-  font-size: 32;
+  font-size: 48;
 }
 
 .heading-element {
@@ -146,4 +146,52 @@ html {
 
 .profession {
   font-size: 0.6em;
+}
+
+.print-warning {
+  background-color: red;
+  color: blue;
+  position: sticky;
+  text-align: center;
+}
+
+@media screen {
+  .print-warning {
+    display: none;
+  }
+}
+/*media ansprache nochmal üben*/
+
+article {
+  padding: 20;
+}
+
+@media print {
+  #hire-me {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  html {
+    font-size: 18px;
+  }
+  header {
+    background-color: blue;
+  }
+  article {
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 20px;
+  }
+  header {
+    background-color: rgb(0, 238, 255);
+  }
+  article {
+    padding: 40px;
+  }
 }
