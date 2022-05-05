@@ -3,6 +3,14 @@
   /*font-family: inherit;*/
 }
 
+.sub-index {
+  z-index: -1;
+}
+
+.exp-heading {
+  z-index: -1;
+}
+
 body {
   margin: 0;
 }
@@ -240,4 +248,17 @@ article {
     content: "🐸🐸";
     font-size: 200%;
   }
+}
+
+footer {
+  display: flex;
+  border: 0px solid red;
+  background-image: linear-gradient(90deg, green, blue, red);
+  font-size: 250%;
+  font-family: tapestry, cursive;
+  justify-content: center;
+}
+
+/*#my-profile {
+  padding-top: 250px;
 }
