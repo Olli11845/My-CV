@@ -263,3 +263,7 @@ footer {
   padding-top: 250px;
 }
 */
+#question:active {
+  transform: rotate(720deg);
+  transition: transform 1s;
+}
