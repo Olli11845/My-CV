@@ -3,6 +3,12 @@
   /*font-family: inherit;*/
 }
 
+html {
+  --link-color: red;
+  --linkcolor-background: white;
+  --link-color-visited: grey;
+}
+
 .sub-index {
   z-index: -1;
 }
@@ -67,12 +73,12 @@ Add a general color for the navigation links
 */
 
 a:link {
-  color: blueviolet;
-  background-color: aquamarine;
+  color: var(--link-color);
+  background-color: var(--link-color-background);
 }
 
 a:visited {
-  color: white;
+  color: var(--link-color-visited);
 }
 
 /*
@@ -199,7 +205,6 @@ article {
 }
 
 #skills-section {
-  border: 2px solid red;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -213,7 +218,6 @@ article {
 
 @media screen and (max-width: 992px) {
   #skills-section {
-    border-color: blue;
     flex-direction: column;
   }
   .hard-skill {
@@ -245,7 +249,7 @@ article {
 
 @media screen and (max-width: 768px) {
   #main-header::after {
-    content: "🐸🐸";
+    content: "🐢💨";
     font-size: 200%;
   }
 }
