@@ -7,6 +7,7 @@ html {
   --link-color: red;
   --linkcolor-background: white;
   --link-color-visited: grey;
+  --test-color: blue;
 }
 
 .sub-index {
@@ -73,12 +74,12 @@ Add a general color for the navigation links
 */
 
 a:link {
-  color: var(--link-color);
+  color: var(--link-color), blue;
   background-color: var(--link-color-background);
 }
 
 a:visited {
-  color: var(--link-color-visited);
+  color: var(--link-cooolor-visited);
 }
 
 /*
@@ -97,6 +98,10 @@ a:active {
 /* *+article nochmal anschauen */
 * + article {
   border-top: 0.2rem dashed black;
+}
+
+a:focus {
+  background-color: yellow;
 }
 
 ::selection {
@@ -128,6 +133,8 @@ a:active {
   right: 0.2rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
+  width: 4em;
+  height: 1em;
 }
 
 header {
@@ -267,7 +274,40 @@ footer {
   padding-top: 250px;
 }
 */
-#question:active {
+
+.question:hover #question {
   transform: rotate(720deg);
-  transition: transform 1s;
+  transform-origin: 25% 25% 0;
+  transition: transform 3s;
+  transition-timing-function: cubic-bezier(0.64, 2.18, 0, -1.39);
+}
+
+.Spielerei {
+  border: 2px solid salmon;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  border: 2px solid var(--test-color);
+  color: var(--test-color, black);
+  background-color: green;
+  transition: 3s;
+  justify-content: flex-start;
+}
+
+.box:hover {
+  background-color: salmon;
+  font-size: 400%;
+}
+
+.question {
+  border: 2px dashed green;
+}
+
+#hire-me:hover {
+  transition: 3s;
+  transition-timing-function: cubic-bezier(0.075, 3, 0.165, 1);
+  transform-origin: 100% 0%;
+  transform: scale(2);
 }
