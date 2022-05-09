@@ -3,6 +3,15 @@
   /*font-family: inherit;*/
 }
 
+@media screen and (min-width: 992px) {
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4em;
+    grid-row
+  }
+}
+
 html {
   --link-color: red;
   --linkcolor-background: white;
