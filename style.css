@@ -326,3 +326,16 @@ footer {
   transform-origin: 100% 0%;
   transform: scale(2);
 }
+
+.Emoji {
+  display: flex;
+  border: 2px solid green;
+  font-size: 16em;
+}
+
+.Emoji:hover {
+  transform: rotate(7200deg);
+  transition: 3s;
+  transition-timing-function: ease;
+  border: 16px dashed red;
+}
