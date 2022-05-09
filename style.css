@@ -7,9 +7,15 @@
   article {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 4em;
-    grid-row
+    grid-row-gap: 0.5em;
+    grid-column-gap: 2em;
   }
+}
+/*grid hinzugefügt*/
+
+.main {
+  display: grid;
+  border: 2px solid forestgreen;
 }
 
 html {
